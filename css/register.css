@@ -1,0 +1,16 @@
+body {
+    font-family: Courier New;
+    color: blue;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+  }
+  
+  .link {
+    margin: 40px;
+  }
