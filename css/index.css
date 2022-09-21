@@ -1,17 +1,30 @@
 body {
   font-family: Gill Sans, sans-serif;
-  background-color: #f5daf0;
+  background-color: #ffffff;
   text-align: center;
 }
 
 a {
   text-decoration: none;
-  color: hotpink;
+  color: rgb(0, 0, 0);
   background-color: lavender;
   padding: 10px;
   border-radius: 25px;
 }
-  
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 5px;
+}
   div {
      margin-bottom: 10px;
   }
@@ -23,8 +36,6 @@ a {
     margin-right: auto;
     width: 30%;
     border-radius: 15px;
-  
-  
   }
   
   .link {
