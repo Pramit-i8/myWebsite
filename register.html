@@ -8,37 +8,26 @@
     <title>Register</title>
 
     <link rel="stylesheet" type="text/css" href="css/register.css">
-    <style>
-      .fishes
-      {
-        position:absolute;
-        top: 10px;
-        left: 10px;
-        z-index: 1;
-      }
-      .fish
-      {
-        position:absolute;
-        top: 25px;
-        left: 25px;
-        z-index: 2;
-      }
-    </style>
   </head>
+<style>
+html{
+    background: url("img/register.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+</style>
 <body>
 <body style="color: blue;">
     <h1>Register</h1>
-    <div class="link">
-      <a href="index.html">EXIT</a>
+    <button onclick="changeColor()">Change Register Color</button>
+    <script src="script.js"></script>
+    <a href="index.html">
+      <button
+      style="color:red;"
+      >Exit</button>
+      </a>
     </div>
     <img src="img/patrickstar.png" alt="bestfriend">
     <img src="img/plank.png" alt="nemesis">
     <img src="img/runbob.png" alt="frycook">
-    <img src="img/register.png" alt="background">
-
-   
-    <button onclick="changeColor()">Change Color</button>
-
-    <script src="script.js"></script> 
 </body>
 </html>
