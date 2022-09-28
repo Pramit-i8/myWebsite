@@ -1,34 +1,82 @@
-<!DOCTYPE html>
-<html>
-   <head>
-    <!-- General meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
+<html><head>
+  <!-- General meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
 
-    <title>Register</title>
+  <title>Register</title>
 
-    <link rel="stylesheet" type="text/css" href="css/register.css">
-  </head>
+  <link rel="stylesheet" type="text/css" href="css/register.css">
 <style>
 html{
-    background: url("img/register.png") no-repeat center center fixed;
-    background-size: cover;
-  }
+  background: url("img/register.png") no-repeat center center fixed;
+  background-size: cover;
+}
+table, th, td {
+border:1px solid black;
+background-color:Orange
+}
+.hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+p {
+  color: black;
+  font-family: 'Trebuchet MS', sans-serif;
+}
 </style>
-<body>
+</head>
 <body style="color: blue; padding-top: 50px;">
+  <h1>Register</h1>
+  <button onclick="changeColor()">Change Register Color</button>
+  <script src="script.js"></script>
+  <a href="index.html">
+    <button style="color:red;">Exit</button>
+    </a>
+  
+<table style="color: black; width: 12%; position:fixed;left: 408px;top: 82px;">
+<tbody><tr>
+  <th>Item</th>
+  <th>Price</th>
+</tr>
+<tr>
+  <td>KRABBY PATTY</td>
+  <td>1.25</td>
+</tr>
+<tr>
+  <td>SALTY SEA DOG</td>
+  <td>2.00</td>
+</tr>
+<tr>
+  <td>SAILORS SURPRISE</td>
+  <td>3.00</td>
+</tr>
+</tbody>
+</table>
 
-    <h1>Register</h1>
-    <button onclick="changeColor()">Change Register Color</button>
-    <script src="script.js"></script>
-    <a href="index.html">
-      <button
-      style="color:red;"
-      >Exit</button>
-      </a>
-    </div>
+<h3 style="color:red;position:fixed;left: 432px;top: 200px;"> NO REFUNDS!!</h3>
+<div class="myDIV">
     <img src="img/patrick.png" style="width: 15%; position:absolute; left:350px; top:250px;">
-    <img src="img/plankton.png" style="width: 9%; position:absolute; left:620px; top:580px;">
-    <img src="img/sbrun.png" style="width: 20%; position:absolute; left:770px; top:250px;">
+    </div>
+    <div class="hide">
+        <p style="position:fixed;left: 400px;top: 220px;">Is mayonnaise an instrument?</p>
+    </div>
+  <div class="myDIV">
+  <img src="img/plankton.png" style="width: 9%; position:absolute; left:620px; top:580px;">
+</div>
+    <div class="hide">
+	<p style="position:fixed;left: 600px;top: 540px;">Tell Krabs to kiss my caboose!!</p>
+    </div>
+
+<div class="myDIV">
+  <img src="img/sbrun.png" style="width: 20%; position:absolute; left:770px; top:250px;">
+</div>
+    <div class="hide">
+        <p style="position:fixed;left: 810px;top: 303px;">Hold it right there Plankton!</p>
+    </div>
+
 </body>
 </html>
